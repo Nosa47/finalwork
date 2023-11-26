@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+     		background-color:hsl(212, 45%, 89%);
+     		margin:0;
+     		display: flex;
+      		justify-content: center;
+      		align-items: center;
+      		height: 100vh;
+    }
+    
+	.image-container {
+      width: 275px;
+      margin: 10px; /* Adjust the margins */
+      height: 400px;
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Align items at the top */
+      align-items: center;
+    }
+    
+    .image-container img {
+      width: 250px; /* Adjusted width with margin on left and right */
+      height: 245px;
+      border-radius: 10px ; /* Curved edges only at the top */
+      display: block;
+      margin: 15px 5px 5px 5px; /* Margin between the border and the image */
+      margin-bottom: 15px;
+    }
+    .text-content {
+      padding: 5px;
+      margin-bottom: 0px; /* Adjusted margin between image and text-content */
+      text-align: center;
+      color: hsl(218, 44%, 22%); /* Text color */
+      font-size: 15px; /* Font size */
+      font-weight: 700; /* Bold text */
+      font-family: 'Outfit', sans-serif; /* Custom font family */
+      }
+      .text-content1 {
+      padding: 5px 10px ;
+      text-align: center;
+      color: hsl(220, 15%, 55%); /* Text color */
+      font-size: 15px; /* Font size */
+      font-weight: 400; /* Bold text */
+      font-family: 'Outfit', sans-serif; /* Custom font family */
+      margin-top: 0px; /* Adjusted margin between text-content and text-content1 */
+      }
+      /* Media query for mobile view */
+    @media screen and (max-width: 375px) {
+      .image-container {
+        width: 100%; /* Make the container full-width on smaller screens */
+        margin: 10px 0; /* Adjust the margin for better spacing */
+      }
+
+      .image-container img {
+        width: 100%; /* Make the image fill the container on smaller screens */
+        margin: 10px 0; /* Adjust the margin for better spacing */
+      }
+    }
+
+    /* Media query for desktop view */
+    @media screen and (min-width: 1440px) {
+      .image-container {
+        width: 50%; /* Adjust the width for desktop screens */
+        margin: 20px; /* Adjust the margin for better spacing */
+      }
+
+      .image-container img {
+        width: 100%; /* Make the image fill the container on larger screens */
+        margin: 10px 0; /* Adjust the margin for better spacing */
+      }
+      
+  </style>
+  <title>QR CODE</title>
+<body>
+	 
+ 	 <div class="image-container">
+    <img src="image-qr-code.png" alt="imag-qr-code">
+    <div class="text-content">
+      Improve your front-end skills by building projects
+    </div>
+    <div class="text-content1">
+    	Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    </div>
+  </div>
+  
+</body>
+</html>
